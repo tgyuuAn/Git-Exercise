@@ -69,3 +69,21 @@ git commit --ammend를 사용하면 됌.
 
 안정성이 매우 뛰어남.
 
+
+
+git branch 명령어를 통해 현재 가지고있는 branch를 알 수 있음.
+
+git branch [가지이름]을 하면 생성 가능.
+
+git checkout [가지이름]을 하면 해당 branch로 이동
+
+
+git commit을 한 가지에서, 이후 main으로 돌아와
+
+git merge [가지이름] 을 하면 해당 가지와 병합을 함.
+
+이후 git push 
+
+반가워요!
+
+
