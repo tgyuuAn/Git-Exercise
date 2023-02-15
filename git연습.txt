@@ -1,0 +1,71 @@
+Git
+
+분산개발
+
+효율개발 (버전관리)
+
+비선형적인 개발 (Branch 개념 사용)
+
+변경 이력 보장 (Commit 내역이 모두 보장됌)
+
+
+
+
+			(commit하기 전)  (우리 컴퓨터에 있는 git저장소)     (사이트에 있는 git저장소)
+working directory     staging Area     Local Repository    Remote Repository
+               add ->          commit ->          push ->
+
+
+		<----merge                        	 <- fetch
+
+
+fetch와 merge를 한번에 사용할 수 있는 기능은 git pull
+
+
+
+
+
+*저장소 (Repository)
+
+Repo라고함. 실제소스 코드, Commit내역등이 담겨있는 곳 
+.git폴더에 담겨있음 (메타데이터들이)
+
+
+
+
+*수정
+
+PR = Pull Request (소스코드가 수정될 수 있도록 요청하는 것)
+
+commit한거 내릴려면 reset
+
+status보면 현재 상태 볼 수 있음.
+
+status할 때 수정된 내역이 있어도,
+
+git checkout -- [파일이름] 을 하면, 수정 내역을 무시할 수 있음.
+
+커밋 메세지 수정은,
+
+git commit --ammend를 사용하면 됌.
+
+뒤로가는 것은 wq!
+
+
+
+
+
+브랜치 (여러명의 개발자가 동시에 다른 기능을 개발할 수 있도록 하는 기능 제공)
+
+서로에게 영향을 받지 않음.
+
+
+
+어떤 팀은 버그 픽스, 어떤 팀은 기능 개발을 담당한다고 하면,
+
+배포된 버전으로 부터 각기 다른 파일에서 작업을 진행.
+
+이후 모두 진행되면 합치기(Merge)를 수행하여 모든 기능이 합쳐진 것을 배포할 수 있음.
+
+안정성이 매우 뛰어남.
+
