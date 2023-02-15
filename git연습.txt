@@ -84,6 +84,10 @@ git merge [가지이름] 을 하면 해당 가지와 병합을 함.
 
 이후 git push 
 
-반가워요!
 
+각기 다른 branch에서 같은 파일을 commit하면 conflict가 생김
+
+이 때 merge는 main에서만 하는데, 그 때 main에서 merge를 하면 conflict된 파일을 제공.
+
+각기 다른 branch에서 수정한 내역을 git에서 보여주고 어떻게 선택할 건지 선택 후, 다시 add commit
 
