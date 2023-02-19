@@ -91,3 +91,62 @@ git merge [가지이름] 을 하면 해당 가지와 병합을 함.
 
 각기 다른 branch에서 수정한 내역을 git에서 보여주고 어떻게 선택할 건지 선택 후, 다시 add commit
 
+
+
+
+
+
+
+
+remote명령어를 이용해 원격 저장소를 여러개 등록할 수 도 있음.
+
+git remote -v 를 사용하면 현재 원격저장소들이 보임.
+
+git remote rename [원래이름] [바꿀이름] 으로 이름 변경도 가능.
+
+이후 log나 merge commit등을 할 때, origin/main을 통해 해당 repo의 해당 branch에만 작업가능.
+
+remote를 제거하려면 git remote rm [이름]을 하면 됌.
+
+
+
+
+*git에서 log 다루기.
+
+git log만 하면 최신순서대로 차례대로 commit내역이 나옴.
+
+많은경우 q를 눌러서 나올 수 있음.
+
+
+
+git log --stat을 하면 해당 commit에서 얼마나 많은 줄이 바뀌었는지 볼 수 있음
+
+
+git log -p -3 을 하면 어떤 내용들이 바뀌었는지 위에서 3개만 보여줌.
+
+git log --graph를 하면 어떻게 commit이 되었는지 그래프 형식으로 보여줌.
+
+
+
+git log --pretty 을 하면 사용자가 원하는 방식으로 log를 출력함
+
+format:"%h -> %an, %ar : %s" --graph
+
+
+
+
+
+
+--README.md (md = markdown)
+
+
+
+#은 글머리
+
+#1개 -> 가장큰, ##2개 -> 약간 작은, 3개 -> 더작아짐, 5개까지 반영.
+
+일반적으로 #1개는 너무크기떄문에 #2개나 3개를 씀.
+
+
+
+소스코드 블록
